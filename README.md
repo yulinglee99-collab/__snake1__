@@ -1,20 +1,38 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# 經典復古貪食蛇
 
-# Run and deploy your AI Studio app
+這是一個使用 React、TypeScript 和 Canvas 打造的經典貪食蛇遊戲。專注於本地開發與遊玩，已清除 Google AI Studio 的額外設定檔與環境依賴。
 
-This contains everything you need to run your app locally.
+## 本地運行
 
-View your app in AI Studio: https://ai.studio/apps/2888c5e1-dff7-4701-88ce-ed4d0da69924
+**必要條件:** Node.js
 
-## Run Locally
-
-**Prerequisites:**  Node.js
-
-
-1. Install dependencies:
+1. 安裝依賴:
    `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
+2. 啟動開發伺服器:
    `npm run dev`
+3. 在瀏覽器打開:
+   `http://localhost:3000`
+
+## GitHub Pages 部署
+
+本專案已設定 GitHub Actions 自動部署到 GitHub Pages。只要把程式碼 push 到 `main` 分支，Actions 會自動執行建置並部署 `dist` 資料夾到 `gh-pages` 分支。
+
+預期 GitHub Pages 網址：
+`https://<your-username>.github.io/__snake1__/`
+
+## 專案說明
+
+- `src/App.tsx`：遊戲邏輯與畫面呈現
+- `src/constants.ts`：遊戲配置常數
+- `src/types.ts`：遊戲類型定義
+- `src/index.css`：TailwindCSS 風格樣式
+
+## 清理內容
+
+已移除以下 AI Studio 專用檔案與依賴：
+- `metadata.json`
+- `.env.example`
+- `@google/genai`
+- `express`
+- `dotenv`
+- `@types/express`
