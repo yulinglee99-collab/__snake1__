@@ -1,0 +1,6 @@
+{
+  "name": "經典復古貪食蛇",
+  "description": "一個使用 React + TypeScript + Canvas 打造的經典貪食蛇遊戲，具有流暢的動畫與簡約的設計。",
+  "requestFramePermissions": [],
+  "majorCapabilities": []
+}
